@@ -1,0 +1,19 @@
+data_source:
+  name: dummyjson_products
+  base_url: https://dummyjson.com/products
+  page_size: 100
+
+benchmark:
+  categories:
+    - smartphones
+    - laptops
+  minimum_products_per_brand: 2
+  top_n_competitors: 8
+
+weights:
+  price_competitiveness: 0.35
+  customer_rating: 0.20
+  shipping_speed: 0.15
+  warranty_coverage: 0.10
+  return_window: 0.10
+  stock_availability: 0.10
